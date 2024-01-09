@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    padding: 8px 0;
+
+}
+
+/*Banner css end*/
+.banner {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    align-items: center;
+    height: 95vh;
+    padding: 0% 10%;
+}
+
+.content h3 {
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #a4b6ac;
+    display: inline;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+
+}
+
+.content p {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #2f485e;
+}
+
+.intro {
+    font-weight: 400;
+    font-size: 40px;
+    color: #2f485e;
+
+}
+
+.name {
+    font-weight: 700px;
+    font-size: 60px;
+    color: #2f485e;
+}
+
+.resume {
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2f485e;
+    color: #fff;
+    font-weight: 600px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.resume:hover {
+    background-color: #a4b6ac;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+/*Banner css end*/
+
+/* Age Section CSS Start*/
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.enterAge{
+    margin-left: 38%;
+}
+
+ #ageInput {
+     font-size: 16px;
+     padding: 8px;
+ }
+
+ #result {
+     font-size: 18px;
+     margin-top: 20px;
+ }
+/* Age Section CSS End*/
+
+
+/* Footer CSS Start*/
+
+ .footer {
+     margin-top: auto;
+     text-align: center;
+     background-color: #f8f9fa;
+     padding: 20px 0;
+ }
+
+/* Footer CSS End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ageCard {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    height: 95vh;
+    padding: 0% 10%;
+}
+
+
+.card {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#childCard {
+    border: 2px solid #4CAF50;
+    margin-left: 100px;
+    
+}
+
+#adultCard {
+    border: 2px solid #2196F3;
+ 
+}

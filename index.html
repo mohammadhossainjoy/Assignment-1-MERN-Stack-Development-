@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn BoothStrap</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    
+</head>
+<body>
+
+    <!--Nav ber Html Start-->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">MHJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Age</a>
+            </li>
+           
+        </ul>
+    </div>
+    </div>
+</nav>
+<!--Nav ber Html End-->
+   
+
+<!--banner html  start-->
+<section class="banner container">
+    <div class="content">
+        <h3>MEREN DEV</h3>
+        <h2 class="intro">Hey, I'm</h2>
+        <h1 class="name">Mohammad Hossain Joy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing emagnam nam sequi adipisci accusantium possimus vel earum
+            excepturi doloremque voluptatibus ut similique, asperiores ipsam officiis corrupti?</p>
+        <button class="resume">Resume</button>
+
+    </div>
+    <div>
+        <img src="image/joy.png" alt="me">
+    </div>
+
+</section>
+<!--banner html  end-->
+
+
+<!--Age Section Html Start-->
+<div>
+    <br><br>
+    <label for="ageInput" class="enterAge">Enter your age:</label>
+    <input type="number" id="ageInput" min="0" placeholder="Type your age">
+    <button type="button" class="btn btn-success" onclick="checkAge()">Success</button>
+    <br><br>
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="age">
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Age Show Cards</h5>
+                        <a href="#" id="result" class="btn btn-primary"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+<!--Age Section Html End-->
+
+
+
+<!--Footer ion Html Start-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2024 MHJ. All rights reserved.</p>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+<!--Footer ion Html End-->
+
+    <script src="JS/bootstrap.bundle.js"></script>
+    
+    <script>
+        function checkAge() {
+            // Get the age input value
+            var age = document.getElementById('ageInput').value;
+
+            // Check if the input is a valid number
+            if (isNaN(age)) {
+                document.getElementById('result').innerText = 'Please enter a valid age.';
+                return;
+            }
+
+            // Convert the input to an integer
+            age = parseInt(age);
+
+            // Check if the age falls into child or adult category
+            if (age >= 0 && age <= 18) {
+                document.getElementById('result').innerText = 'You are a child.';
+            } else if (age > 18) {
+                document.getElementById('result').innerText = 'You are an adult.';
+            } else {
+                document.getElementById('result').innerText = 'Please enter a valid age.';
+            }
+        }
+    </script>
+</body>
+</html>
