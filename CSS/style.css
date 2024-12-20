@@ -131,10 +131,11 @@ body {
 
 .ageCard {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 12fr 0fr;
     align-items: center;
     height: 95vh;
-    padding: 0% 10%;
+    padding-left: 40%;
+    margin-left: 38%;
 }
 
 
